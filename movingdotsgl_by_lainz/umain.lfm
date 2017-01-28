@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 362
+  Height = 240
+  Top = 181
+  Width = 320
+  Caption = 'Moving Dots GL'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.2.0'
+  WindowState = wsMaximized
+  object BGLVirtualScreen1: TBGLVirtualScreen
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    OnRedraw = BGLVirtualScreen1Redraw
+    Align = alClient
+    BevelWidth = 0
+    Caption = 'Moving Dots GL'
+    TabOrder = 0
+    UseDockManager = False
+    OnClick = BGLVirtualScreen1Click
+    OnLoadTextures = BGLVirtualScreen1LoadTextures
+    SmoothedElapse = True
+  end
+  object Timer1: TTimer
+    Interval = 30
+    OnTimer = Timer1Timer
+    left = 65
+    top = 58
+  end
+end
