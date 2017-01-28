@@ -9,7 +9,7 @@ uses
   FGL, Math, BGLVirtualScreen, BGRAOpenGL, BGRABitmapTypes;
 
 const
-  MAXDOTS = 10000;
+  MAXDOTS = 1000;
 
 type
 
@@ -48,6 +48,7 @@ type
     procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
+    FPic: IBGLTexture;
     Dots: TDotList;
     elapsed: QWord;
     nextLap: QWord;
@@ -121,7 +122,7 @@ begin
   //BGRAReplace(ABitmap, ABitmap.FilterBlurRadial(5, 5, rbFast));
   //ABitmap.Rectangle(0, 0, Width, Height, BGRAPixelTransparent, BGRA(0, 0, 0, RandomRange(5, 10)),
   //  dmDrawWithTransparency);
-  BGLContext.Canvas.Fill(BGRABlack);
+  BGLContext.Canvas.Fill(BGRA(40, 40, 40));
   MoveDots(Offset(), Point(0, 0), Point(Width - 1, Height - 1));
   DrawDots(BGLContext);
   //Abitmap.Draw(PaintBox1.Canvas, 0, 0);
@@ -191,13 +192,16 @@ var
   d: TDot;
 begin
   for d in Dots do
-    Context.Canvas.Ellipse(d.x, d.y, 5, 5, d.Color, d.Color);
+    FPic.Draw(d.x, d.y, d.Color);
 end;
 
 procedure TForm1.BGLVirtualScreen1LoadTextures(Sender: TObject;
   BGLContext: TBGLContext);
+var
+  temp: TBGLBitmap;
 begin
-
+  temp := TBGLBitmap.Create(ProgramDirectory + 'bacteria.png');
+  FPic := temp.MakeTextureAndFree;
 end;
 
 procedure TForm1.BGLVirtualScreen1Click(Sender: TObject);
