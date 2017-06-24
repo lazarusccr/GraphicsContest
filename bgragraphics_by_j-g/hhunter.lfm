@@ -1,0 +1,89 @@
+object Watch: TWatch
+  Left = 324
+  Height = 302
+  Top = 622
+  Width = 785
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 302
+  ClientWidth = 785
+  Color = clWhite
+  FormStyle = fsSystemStayOnTop
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.0.4'
+  object CaseControl: TBGRAGraphicControl
+    Cursor = crDrag
+    Left = 21
+    Height = 300
+    Top = 0
+    Width = 759
+    Align = alCustom
+    Anchors = []
+    OnRedraw = CaseControlRedraw
+    Color = clWhite
+    ColorOpacity = 128
+    Alignment = taCenter
+    OnMouseDown = CaseControlMouseDown
+  end
+  object Latch: TLabel
+    Cursor = crSizeSW
+    Left = 600
+    Height = 25
+    Top = 60
+    Width = 25
+    AutoSize = False
+    Enabled = False
+    ParentColor = False
+    OnClick = LatchClick
+  end
+  object WinderButton: TLabel
+    Cursor = crSizeWE
+    Left = 670
+    Height = 50
+    Top = 120
+    Width = 50
+    AutoSize = False
+    ParentColor = False
+    OnClick = WinderButtonClick
+  end
+  object CaseCloseButton: TLabel
+    Cursor = crSizeW
+    Left = 50
+    Height = 50
+    Top = 120
+    Width = 252
+    AutoSize = False
+    Enabled = False
+    ParentColor = False
+    OnClick = CaseCloseButtonClick
+  end
+  object MovementClose: TLabel
+    Cursor = crSizeNE
+    Left = 124
+    Height = 20
+    Hint = 'Close the Movement?'
+    Top = 278
+    Width = 50
+    AutoSize = False
+    Enabled = False
+    ParentColor = False
+    OnClick = MovementCloseClick
+  end
+  object Terminate: TLabel
+    Cursor = crCross
+    Left = 465
+    Height = 10
+    Top = 145
+    Width = 10
+    AutoSize = False
+    ParentColor = False
+    OnClick = TerminateClick
+  end
+  object TenthSec: TTimer
+    Interval = 100
+    OnTimer = TenthSecTimer
+    left = 4
+    top = 4
+  end
+end

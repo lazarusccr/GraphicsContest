@@ -1,0 +1,21 @@
+Simple slideshow using Lazarus TOpenGLControl.
+
+Date: 19th June 2017
+Project Name: OpenGL Slideshow
+Version: 0.9
+Author: Handoko Zhang
+Email: handoko_yahu@yahoo.co.id
+Website: http://forum.lazarus.freepascal.org/index.php/topic,35313.msg249731.html#msg249731
+License: CC-BY
+
+I created this project for educational purpose. The source code is provided for anyone to study, alter and improve. You can do anything you like, you just can't change the name of the original author.
+
+This program was developed and tested using Lazarus 1.6.4 Ubuntu 16.10 64-bit.
+
+Limitations:
+- No support for resizing and full screen preview
+- No sound effect
+- Max. 5 slides
+- Cannot save project
+- Cannot remove slide
+- Only jpeg image is supported

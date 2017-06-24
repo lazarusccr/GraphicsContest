@@ -1,0 +1,248 @@
+object Form1: TForm1
+  Left = 283
+  Height = 600
+  Top = 186
+  Width = 800
+  BorderStyle = bsSingle
+  Caption = 'OpenGL Slideshow'
+  ClientHeight = 600
+  ClientWidth = 800
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Panel1: TPanel
+    Left = 32
+    Height = 448
+    Top = 32
+    Width = 424
+    BevelOuter = bvNone
+    BorderWidth = 5
+    Caption = 'Panel1'
+    ClientHeight = 448
+    ClientWidth = 424
+    TabOrder = 14
+    object GLOutput: TOpenGLControl
+      Left = 5
+      Height = 438
+      Top = 5
+      Width = 414
+      Align = alClient
+      MultiSampling = 2
+      OnPaint = GLOutputPaint
+    end
+  end
+  object Background: TButton
+    Left = 488
+    Height = 80
+    Top = 24
+    Width = 115
+    Caption = 'Background'
+    Color = clBlack
+    Font.Color = clWhite
+    OnClick = BackgroundClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object LoadImage1: TBitBtn
+    Tag = 1
+    Left = 488
+    Height = 80
+    Hint = 'Click to load an image'
+    Top = 144
+    Width = 115
+    Caption = 'Load Image'
+    OnClick = LoadImageClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object LoadImage2: TBitBtn
+    Tag = 2
+    Left = 488
+    Height = 80
+    Hint = 'Click to load an image'
+    Top = 232
+    Width = 115
+    Caption = 'Load Image'
+    OnClick = LoadImageClick
+    TabOrder = 4
+    Visible = False
+  end
+  object LoadImage3: TBitBtn
+    Tag = 3
+    Left = 488
+    Height = 80
+    Hint = 'Click to load an image'
+    Top = 320
+    Width = 115
+    Caption = 'Load Image'
+    OnClick = LoadImageClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    Visible = False
+  end
+  object LoadImage4: TBitBtn
+    Tag = 4
+    Left = 488
+    Height = 80
+    Hint = 'Click to load an image'
+    Top = 408
+    Width = 115
+    Caption = 'Load Image'
+    OnClick = LoadImageClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 8
+    Visible = False
+  end
+  object LoadImage5: TBitBtn
+    Tag = 4
+    Left = 488
+    Height = 80
+    Hint = 'Click to load an image'
+    Top = 496
+    Width = 115
+    Caption = 'Load Image'
+    OnClick = LoadImageClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 10
+    Visible = False
+  end
+  object Transition1: TComboBox
+    Left = 624
+    Height = 27
+    Hint = 'Transition'
+    Top = 168
+    Width = 149
+    ItemHeight = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    Text = 'Slide In: Down'
+    Visible = False
+  end
+  object Transition2: TComboBox
+    Left = 624
+    Height = 27
+    Hint = 'Transition'
+    Top = 256
+    Width = 149
+    ItemHeight = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    Text = 'Slide In: Down'
+    Visible = False
+  end
+  object Transition3: TComboBox
+    Left = 624
+    Height = 27
+    Hint = 'Transition'
+    Top = 344
+    Width = 149
+    ItemHeight = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 7
+    Text = 'Slide In: Down'
+    Visible = False
+  end
+  object Transition4: TComboBox
+    Left = 624
+    Height = 27
+    Hint = 'Transition'
+    Top = 432
+    Width = 149
+    ItemHeight = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 9
+    Text = 'Slide In: Down'
+    Visible = False
+  end
+  object Transition5: TComboBox
+    Left = 624
+    Height = 27
+    Hint = 'Transition'
+    Top = 520
+    Width = 149
+    ItemHeight = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 11
+    Text = 'Slide In: Down'
+    Visible = False
+  end
+  object PlayPause: TButton
+    Left = 56
+    Height = 40
+    Hint = 'Click to Play'
+    Top = 517
+    Width = 100
+    Caption = 'Play'
+    OnClick = PlayPauseClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 12
+  end
+  object Speed: TTrackBar
+    Left = 216
+    Height = 37
+    Hint = 'Speed'
+    Top = 520
+    Width = 224
+    Max = 5
+    Min = 1
+    OnChange = SpeedChange
+    PageSize = 1
+    Position = 5
+    TabOrder = 13
+  end
+  object Proportional: TCheckBox
+    Left = 648
+    Height = 36
+    Top = 40
+    Width = 110
+    Caption = 'Proportional'#10'Scaling'
+    OnChange = ProportionalChange
+    TabOrder = 1
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'JPEG Image|*.jpg;*.jpeg;*.jpe'
+    left = 216
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 16
+    OnTimer = Timer1Timer
+    left = 120
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 168
+  end
+end

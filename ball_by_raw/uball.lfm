@@ -1,0 +1,22 @@
+object wndGUI: TwndGUI
+  Left = 569
+  Height = 300
+  Top = 478
+  Width = 448
+  Caption = 'Catch The Ball ...'
+  ClientHeight = 300
+  ClientWidth = 448
+  Color = clBlack
+  OnResize = FormResize
+  LCLVersion = '1.6.4.0'
+  object shpBall: TShape
+    Left = 121
+    Height = 65
+    Top = 110
+    Width = 65
+    Brush.Color = clLime
+    Pen.Style = psClear
+    OnMouseMove = shpBallMouseMove
+    Shape = stCircle
+  end
+end

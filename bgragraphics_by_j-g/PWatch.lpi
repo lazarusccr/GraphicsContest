@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="PWatch"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <Resources Count="25">
+        <Resource_0 FileName="Images\01-CaseFront.png" Type="RCDATA" ResourceName="01-CASEFRONT"/>
+        <Resource_1 FileName="Images\02-MinHand.png" Type="RCDATA" ResourceName="02-MINHAND"/>
+        <Resource_2 FileName="Images\03-SecHand.png" Type="RCDATA" ResourceName="03-SECHAND"/>
+        <Resource_3 FileName="Images\04-HourHand.png" Type="RCDATA" ResourceName="04-HOURHAND"/>
+        <Resource_4 FileName="Images\05-Dial.png" Type="RCDATA" ResourceName="05-DIAL"/>
+        <Resource_5 FileName="Images\06-DayDial.png" Type="RCDATA" ResourceName="06-DAYDIAL"/>
+        <Resource_6 FileName="Images\07-DateWheel.png" Type="RCDATA" ResourceName="07-DATEWHEEL"/>
+        <Resource_7 FileName="Images\08-Winder.png" Type="RCDATA" ResourceName="08-WINDER"/>
+        <Resource_8 FileName="Images\09-Winder.png" Type="RCDATA" ResourceName="09-WINDER"/>
+        <Resource_9 FileName="Images\10-Winder.png" Type="RCDATA" ResourceName="10-WINDER"/>
+        <Resource_10 FileName="Images\11-BackRim.png" Type="RCDATA" ResourceName="11-BACKRIM"/>
+        <Resource_11 FileName="Images\12-Button.png" Type="RCDATA" ResourceName="12-BUTTON"/>
+        <Resource_12 FileName="Images\13-Back.png" Type="RCDATA" ResourceName="13-BACK"/>
+        <Resource_13 FileName="Images\14-CaseFront.png" Type="RCDATA" ResourceName="14-CASEFRONT"/>
+        <Resource_14 FileName="Images\15-TopPlates.png" Type="RCDATA" ResourceName="15-TOPPLATES"/>
+        <Resource_15 FileName="Images\18-BalWheel.png" Type="RCDATA" ResourceName="18-BALWHEEL"/>
+        <Resource_16 FileName="Images\19-BalWheel.png" Type="RCDATA" ResourceName="19-BALWHEEL"/>
+        <Resource_17 FileName="Images\20-BalPlate.png" Type="RCDATA" ResourceName="20-BALPLATE"/>
+        <Resource_18 FileName="Images\21-Wheel-3.png" Type="RCDATA" ResourceName="21-WHEEL-3"/>
+        <Resource_19 FileName="Images\22-Wheel-4.png" Type="RCDATA" ResourceName="22-WHEEL-4"/>
+        <Resource_20 FileName="Images\23-CentreWheel.png" Type="RCDATA" ResourceName="23-CENTREWHEEL"/>
+        <Resource_21 FileName="Images\24-Pallet.png" Type="RCDATA" ResourceName="24-PALLET"/>
+        <Resource_22 FileName="Images\25-Pallet.png" Type="RCDATA" ResourceName="25-PALLET"/>
+        <Resource_23 FileName="Images\26-EscapeWheel.png" Type="RCDATA" ResourceName="26-ESCAPEWHEEL"/>
+        <Resource_24 FileName="Images\27-DialBack.png" Type="RCDATA" ResourceName="27-DIALBACK"/>
+      </Resources>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="bgracontrols"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="PWatch.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="hhunter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Watch"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="HHunter"/>
+      </Unit1>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="PWatch"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <TargetCPU Value="i386"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
