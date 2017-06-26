@@ -1,0 +1,34 @@
+object PropForm: TPropForm
+  Left = 449
+  Height = 288
+  Top = 270
+  Width = 295
+  Caption = 'Properties'
+  ClientHeight = 288
+  ClientWidth = 295
+  LCLVersion = '1.6.4.0'
+  object vl: TValueListEditor
+    Left = 0
+    Height = 288
+    Top = 0
+    Width = 295
+    Align = alClient
+    DefaultRowHeight = 25
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 0
+    OnClick = vlClick
+    OnEditingDone = vlEditingDone
+    Strings.Strings = (
+      ''
+    )
+    TitleCaptions.Strings = (
+      'Property'
+      'Value'
+    )
+    ColWidths = (
+      64
+      227
+    )
+  end
+end

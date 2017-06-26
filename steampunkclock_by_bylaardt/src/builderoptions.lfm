@@ -1,0 +1,35 @@
+object Options: TOptions
+  Left = 328
+  Height = 103
+  Top = 255
+  Width = 220
+  AlphaBlend = True
+  Caption = 'Options'
+  ClientHeight = 103
+  ClientWidth = 220
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 18
+    Top = 8
+    Width = 51
+    Caption = 'Max FPS'
+    ParentColor = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 16
+    Height = 49
+    Top = 32
+    Width = 198
+    LineSize = 5
+    Max = 60
+    Min = 10
+    OnChange = TrackBar1Change
+    Position = 10
+    ScalePos = trBottom
+    TickMarks = tmBoth
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+  end
+end
