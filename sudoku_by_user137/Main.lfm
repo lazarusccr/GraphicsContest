@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 245
+  Height = 387
+  Top = 127
+  Width = 519
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Sudoku - nxDemo 2017'
+  ClientHeight = 387
+  ClientWidth = 519
+  KeyPreview = True
+  OnChangeBounds = FormChangeBounds
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnMouseWheel = FormMouseWheel
+  OnPaint = FormPaint
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object Memo1: TMemo
+    Left = 20
+    Height = 219
+    Top = 13
+    Width = 276
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 0
+    Visible = False
+  end
+  object AppProperties: TApplicationProperties
+    OnIdle = AppPropertiesIdle
+    left = 64
+    top = 9
+  end
+end
