@@ -1,0 +1,45 @@
+E_Coor
+	X Y
+E_Size
+	Width Height
+E_Direction
+	ANGLEinteger
+E_Spread
+	ANGLEinteger
+E_Life
+	single
+E_LoopMode
+	TRUE or FALSE
+E_Emission
+	integer
+E_Gravity
+	GXsingle GYsingle
+
+P_Texture
+	FILEstring
+P_Life
+	LIFEsingle  VARIATIONsingle
+P_ColorMode
+	byte
+P_BlendMode
+	byte
+P_Color
+	ARRAYCOUNTinteger LIFEsingle REDbyte GREENbyte BLUEbyte ALPHAbyte LIFEsingle red green blue alpha life....
+
+le tableau de la vélocité contient des pourcentages que l'on rajoute à la valeur courante.
+P_Velocity
+	VELOCITYsingle VARIATIONsingle ARRAYCOUNTinteger LIFEsingle VALUEsingle LIFEsingle...
+
+le tableau de la vélocité angulaire contient des pourcentages que l'on rajoute à la valeur courante.
+P_AVelocity
+	AVELOCITYsingle VARIATIONsingle ARRAYCOUNTinteger LIFEsingle VALUEsingle...
+
+le tableau de la taille contient des coefficient (%) que l'on multiplie à la valeur courante.
+P_Size
+	SIZEsingle VARIATIONsingle ARRAYCOUNTinteger LIFEsingle VALUEsingle LIFEsingle...
+
+P_StartAngle
+	ANGLEsingle VARIATIONsingle
+
+P_Spin
+	SPINsingle VARIATIONsingle ARRAYCOUNTinteger LIFEsingle VALUEsingle LIFEsingle...

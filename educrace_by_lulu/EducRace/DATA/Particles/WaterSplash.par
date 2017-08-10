@@ -1,0 +1,39 @@
+E_Coor
+100 100
+E_Size
+30 10
+E_Direction
+270
+E_Spread
+100
+E_Life
+3
+E_LoopMode
+TRUE
+E_Emission
+60
+E_Gravity
+0 -3
+P_Texture
+water_drop.png
+32 32
+P_Frame
+0 0
+P_Life
+0.6 0.5
+P_ColorMode
+0
+P_BlendMode
+0
+P_Color
+4 0.0 63 141 232 100 0.33 100 200 255 255 0.66 80 190 255 60 1 150 200 255 0
+P_Velocity
+105 20 2 0.0 0 1.0 0
+P_AVelocity
+0 0 2 0.0 0 1.0 1
+P_Size
+0.5 0.0 3 0.0 1 0.5 3.0 1.0 0.5
+P_StartAngle
+90 0
+P_Spin
+360 90 2 0 1 1 1

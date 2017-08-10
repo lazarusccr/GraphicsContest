@@ -1,0 +1,39 @@
+E_Coor
+0 0
+E_Size
+140 90
+E_Direction
+0
+E_Spread
+360
+E_Life
+3
+E_LoopMode
+TRUE
+E_Emission
+300
+E_Gravity
+0 0
+P_Texture
+Dust.png
+32 32
+P_Frame
+0 0
+P_Life
+1 1
+P_ColorMode
+0
+P_BlendMode
+0
+P_Color
+4 0.0 255 255 255 80 0.33 255 255 255 50 0.66 255 255 255 30 1 255 255 255 0
+P_Velocity
+105 20 2 0.0 0 1.0 0
+P_AVelocity
+0 0 2 0.0 0 1.0 1
+P_Size
+0.7 0.5 2 0 1 1 2
+P_StartAngle
+0 360
+P_Spin
+30 40 2 0 1 1 1.5

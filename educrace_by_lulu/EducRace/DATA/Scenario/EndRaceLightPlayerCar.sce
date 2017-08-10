@@ -1,0 +1,20 @@
+Visible FALSE
+Wait 1
+Visible TRUE
+Wait 1
+Visible FALSE
+Wait 0.5
+Visible TRUE
+Wait 0.25
+Visible FALSE
+Wait 0.2
+Visible TRUE
+Wait 0.3
+Visible FALSE
+Wait 0.3
+Visible TRUE
+Wait 1
+Wait 0.2
+Visible FALSE
+Wait 0.9
+Blink -1 0.75 0.25

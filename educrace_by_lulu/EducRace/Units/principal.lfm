@@ -1,0 +1,35 @@
+object Form_Principal: TForm_Principal
+  Left = 337
+  Height = 768
+  Top = 0
+  Width = 1024
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Educ'' Race'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Color = clBlack
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.6.4.0'
+  WindowState = wsMaximized
+  object OpenGLControl1: TOpenGLControl
+    Left = 0
+    Height = 768
+    Top = 0
+    Width = 1024
+    Align = alClient
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 60
+    OnTimer = Timer1Timer
+    left = 16
+    top = 280
+  end
+end

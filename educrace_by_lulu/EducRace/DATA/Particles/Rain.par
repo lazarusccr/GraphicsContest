@@ -1,0 +1,39 @@
+E_Coor
+0 0
+E_Size
+100 100
+E_Direction
+120
+E_Spread
+0
+E_Life
+3
+E_LoopMode
+TRUE
+E_Emission
+100
+E_Gravity
+0 0
+P_Texture
+RainDrop.png
+32 32
+P_Frame
+0 0
+P_Life
+0.5 0.2
+P_ColorMode
+0
+P_BlendMode
+0
+P_Color
+2 0.0 255 255 255 255 1 255 255 255 0
+P_Velocity
+200 20 2 0.0 0 1.0 0
+P_AVelocity
+0 0 2 0.0 0 1.0 0
+P_Size
+0.8 0.5 2 0 1 1 1
+P_StartAngle
+30 0
+P_Spin
+0 0 2 0 0 1 0
